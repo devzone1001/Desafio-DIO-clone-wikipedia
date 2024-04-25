@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex; 
+            flex-direction: column;
+        }
+        ul > li{
+            padding: 1%;
+        }
+        a { color:blue; text-decoration: none;}
+        .bar {
+            background-color: #f9f9fb;
+            padding:15px;
+            border-top: solid 1px #cdcdcd;
+            border-bottom: solid 1px #cdcdcd;
+        }
+        .content {
+            max-width: 100%;
+            margin: auto;
+            grid-gap: 3rem;
+            display: grid;
+            gap: 3rem;
+            grid-template-areas: "sidebar main anchors";
+            grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+            padding-left: 1rem;
+            padding-right: 1rem;
+            flex: 1;
+            padding: 20px;
+        }
+        .footer {
+            min-height: 100px;
+            border-top: solid 1px #cdcdcd;
+            text-align: center;
+            padding: 100% 10;
+        }
+        .anchors {
+            border-left: solid 1px #cdcdcd;
+            padding-left: 15px;
+        }
+        .sidebar {
+            border-right: solid 1px #cdcdcd;
+        }
+        figure {
+            text-align: center;
+            margin: 0;
+        }
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            
+        }
+        
+        .logo img {
+            width: 100%;
+            max-width: 200px; /* Definindo largura máxima para as imagens */
+            height: auto;
+            margin: 5px 0;
+
+        }
+        .logo .globo{
+            margin-right: 72.6%;
+            width: 25%;
+        }
+        .logo .wordmark{
+            margin-right: 70%;
+            margin-top: -6%;
+            width: 20%;
+        }
+        .logo .tagline{
+            margin-right: 73%;
+            margin-top: -1%;
+            
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px 0;
+        }
+        footer > p > a{
+            color: white;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+            color: aqua;
+}
+    </style>
+</head>
+<body>
+
+    <div>   
+        <figure>
+            <div class="logo">
+                <div class="globo"><img class="globo" src="imagens/wikipedia.png" width="200" alt="logo da imagem"/></div>
+                <div class="wordmark"><img src="imagens/wikipedia-wordmark-fr.png" width="200" alt="logo da imagem"></div>
+                <div class="tagline"><img src="imagens/wikipedia-tagline-pt.png" width="200" alt="logo da imagem"></div>
+            </div>
+        </figure>
+        
+    </div>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2>Título</h2>
+            <ul>
+                <li><a href="#parte1">Início</a></li>
+                <li><a href="#parte2">Visão Geral</a></li>
+                <li><a href="#parte3">Pensamento computacional no ensino fundamental</a></li>
+                <li><a href="#parte4">Recursos sobre pensamento computacional</a></li>
+                <li><a href="#parte5">Críticas</a></li>
+                <li><a href="#parte6">Pensamento Computacional na Educação Básica</a></li>
+                <li><a href="#parte7">Pensamento Computacional e Inteligência na Educação Básica</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <seletion>
+                <h1 id="parte1">Pensamento computacional</h1>
+                <hr>
+                <p><strong>Pensamento Computacional</strong> é o processo de pensamento envolvido na formulação de um problema e na expressão de sua solução de forma que um computador — humano ou máquina — possa efetivamente realizar. Diferentes definições e enfoques para o termo podem ser encontradas na literatura e um robusto corpo de pesquisas está em desenvolvimento em diferentes lugares do mundo.</p>
+                <p>Recentemente, o Pensamento Computacional, juntamente com os eixos Mundo Digital e Cultura Digital foram inseridas na Base Nacional Comum Curricular.</p>
+                <p>O Pensamento Computacional envolve identificar um problema complexo e quebrá-lo em pedaços menores e mais fáceis de gerenciar (<strong>decomposição</strong>). Cada um desses problemas menores pode ser analisado individualmente com maior profundidade, identificando problemas parecidos que já foram solucionados anteriormente (<strong>reconhecimento de padrões</strong>), focando apenas nos detalhes que são importantes, enquanto informações irrelevantes são ignoradas (<strong>abstração</strong>). Por último, passos ou regras simples podem ser criados para resolver cada um dos subproblemas encontrados (<strong>algoritmos</strong>).</p>
+                <p>A história do pensamento computacional remonta, pelo menos, à década de 1950, mas a maioria das ideias é muito mais antiga. O termo "pensamento computacional" foi usado pela primeira vez por <a href="https://pt.wikipedia.org/wiki/Seymour_Papert">Seymour Papert</a> em 1980 e novamente em 1996. Mas, lendo o artigo "Twenty things to do with a computer" de Seymour Papert e Cynthia Solomon, escrito no ano de 1971, pode-se perceber que as ideias do Pensamento Computacional já existiam, porém não tinham sido denominados com esse termo. O pensamento computacional pode ser usado para resolver algoritmicamente problemas complexos e é frequentemente usado para realizar grandes melhorias na eficiência.</p>
+                <h2 id="parte2">Visão Geral</h2>
+                <hr>
+                <p>As características que definem o pensamento computacional são decomposição, reconhecimento de padrões / representação de dados, generalização/abstração e algoritmos.Decompondo um problema, identificando as variáveis envolvidas utilizando representação de dados e criando algoritmos, uma solução genérica é produzida. A solução genérica é a generalização ou abstração que pode ser utilizada para resolver diversas variações do problema inicial. A expressão pensamento computacional foi colocada em evidência na comunidade de ciência da computação como o resultado de um artigo da ACM Communications escrito por Jeannette Wing. O artigo propõe que o pensamento computacional seja uma competência fundamental para qualquer pessoa, não somente para cientistas de computação e argumenta sobre a importância da integração do pensamento computacional em outras disciplinas.</p>
+                <p>De acordo com Raabe, o simples fato de ensinar a programar não garante o desenvolvimento de habilidades relacionadas ao Pensamento Computacional nos estudantes. Ele defende que deve ocorrer uma mudança nos hábitos e métodos de ensino, baseando-se no Construcionismo, de maneira a permitir que o estudante utilize a computação como forma de compreender e modelar os problemas que vivencia, passando a ser o protagonista de sua aprendizagem</p>
+                <h2 id="parte3">Pensamento computacional no ensino fundamental</h2>
+                <hr>
+                <p>O pensamento computacional deveria ser parte essencial da educação de crianças e jovens. Entretanto, desde as primeiras afirmações nesse sentido a integração do ensino do pensamento computacional no ensino fundamental e médio (K-12) sofreu diversas mudanças, incluindo a convergência em torno da definição de pensamento computacional. Atualmente o pensamento computacional pode ser definido como um conjunto de competências cognitivas e o processo de resolução de problemas que inclui (mas não limitado a) as seguintes características:</p>
+                
+                    <ul>
+                        <li>Organização lógica e análise dos dados</li>
+                        <li>Divisão do problema em partes menores</li>
+                        <li>Abordagem do problema utilizando técnicas de pensamento programático, como iteração, representação simbólica e operações lógicas</li>
+                        <li>Reformulação do problema em uma série de etapas ordenadas (pensamento algorítmico)</li>
+                        <li>Identificação, análise e implementação de possíveis soluções com o objetivo de alcançar a combinação mais eficiente e efetiva de etapas e recursos</li>
+                        <li>Generalização deste processo de solução de problemas para uma grande variedade</li>
+                    </ul>
+                
+                <p>Atualmente a integração do pensamento computacional ao currículo do ensino fundamental e médio tem sido realizada de duas formas: diretamente em aulas de computação ou por meio do uso do pensamento computacional em outras áreas. Professores de ciência, tecnologia, engenharia e matemática (STEM) tem incluído o pensamento computacional no conteúdo de suas aulas, possibilitando os alunos praticarem competências relacionadas a resolução de problemas, tais como tentativa e erro. Entretanto, Conrad Wolfram argumenta que o pensamento computacional deve ser ensinado como um assunto distinto. A BNCC prevê o aprendizado de rudimentos do Pensamento Computacional integrado à disciplina de Matemática, possivelmente devido às fortes relações que há entre ambas as áreas. Exemplos estão disponíveis no Currículo de Referência em Tecnologia e Computação.</p>
+                <h2 id="parte4">Recursos sobre pensamento computacional</h2>
+                <hr>
+                <p>Existem diversas instituições que disponibilizam materiais sobre o pensamento computacional, como currículos, ferramentas e outros recursos para formar estudantes com o pensamento computacional, análise e resolução de problemas antes que eles entrem na universidade. Um dos mais importantes é Carnegie Mellon Robotics Academy, que oferece treinamento para professores e alunos. Outra fonte importante também é o legoengineering.com.</p>
+                <p>No Brasil diversas iniciativas têm promovido o pensamento computacional, como o Computacional, ExpPC e a Computação na Escola, onde podem ser encontrados materiais e relatos de experiência para ajudar a implantar nas escolas brasileiras e o Guia do Pensamento Computacional que organiza os principais artigos, ferramentas e currículos sobre o tema</p>
+                <h2 parte5>Críticas</h2>
+                <hr>
+                <p>O conceito de pensamento computacional tem sido criticado por ser muito vago e por raramente ser possível diferenciá-lo de outras formas de pensamento. Alguns cientistas se preocupam com a promoção do pensamento computacional como um substituto de um ensino mais abrangente de ciência, pelo fato do pensamento computacional representar somente uma pequena parte da área. Outros ainda se preocupam de que a ênfase no pensamento computacional possa encorajar cientistas da computação a pensar de maneira muito fechada e limitada sobre os problemas que eles podem resolver, esquecendo das implicações sociais, éticas e ambientais da aplicação das tecnologias que eles criam.</p>
+                <h2 id="parte6">Pensamento Computacional na Educação Básica Brasileira</h2>
+                <hr>
+                <p>A norma da Computação foi inicialmente prevista nas Resoluções CNE/CP 02/2017 e CNE/CP 04/2018 em todas as etapas de ensino. Em 17 de fevereiro de 2022, o parecer da Norma sobre Computação na Educação Básica – Complemento à Base Nacional Comum Curricular (BNCC) e as Tabelas de Habilidades e Competências foram aprovadas com louvor e unanimidade pelo Conselho Nacional de Educação (CNE).</p>
+                <p>A norma foi homologada no dia 30 de setembro de 2022 pelo Ministério da Educação (MEC) e publicada no Diário Oficial da União no dia 03 de outubro do mesmo ano.</p>
+                <p>A Resolução CEB 01/2022 define a norma como complemento à BNCC e dá outros encaminhamentos, tais como: o desenvolvimento de currículos pelas redes, formação inicial e continuada de professores, prazo de implementação e o estabelecimento de políticas públicas.</p>
+                <p>Em paralelo, a Política Nacional de Educação Digital (PNED) tramitou no Congresso e foi sancionada pelo presidente no dia 11 de janeiro de 2023. A Lei nº 14.533/23 que criou a PNED, também altera o artigo 26 da Lei de Diretrizes e Bases da Educação Nacional (Lei nº 9394/1996), incluindo o ensino de computação, programação, robótica e outras competências digitais como um novo componente curricular no ensino fundamental e médio. O oitavo artigo da LDB também foi alterado, incluindo a avaliação do letramento e da educação digital nas escolas e das IES. Além disso, o PNED tem o intuito de facilitar o financiamento e formação adequada de professores, adequação das grades curriculares de cursos de licenciatura, oferta de cursos de Licenciatura em Computação, desenvolvimento de material didático, propiciar equipamentos e internet adequados às escolas e dá outros encaminhamentos.</p>
+                <h2 id="parte7">Pensamento Computacional e Inteligência Artificial na Educação Básica</h2>
+                <hr>
+                <p>O Referencial Curricular em Inteligência Artificial no Ensino Médio foi elaborado com a finalidade de estimular a reflexão crítica e o desenvolvimento de práticas curriculares que contribuam para o desenvolvimento do Pensamento Computacional e a promoção de aprendizados considerados essenciais no contexto da aproximação das instituições educacionais ao panorama tecnológico atual. As competências incorporadas foram criteriosamente escolhidas com a expectativa de condensar conhecimentos fundamentais para um entendimento introdutório sobre Inteligência Artificial, abordando tanto os aspectos tecnológicos - como a Inteligência Artificial opera - quanto os simbólicos - qual o seu significado e representação. Inclui-se no documento um leque de atividades direcionadas tanto a estudantes quanto a educadores. Embora a proposta não seja oficial, ela representa uma iniciativa pública com o objetivo de investigar e desenvolver recursos didáticos para a implementação do estudo de Inteligência Artificial em ambientes escolares. O documento é uma primeira proposta para organizar competências e habilidades, iniciando um debate sobre seu uso para a educação básica brasileira. A partir desse referencial também foi publicado o livro "Inteligência Artificial na Educação Básica" com o intuito de facilitar a compreensão pelos professores das escolas.</p>
+            </seletion>
+        </div>
+
+        <div class="anchors">
+            <h2>Referências</h2>
+            <ul>
+                <li><a href="https://pt.wikipedia.org/wiki/Pensamento_computacional" target="_blank">Pensamento computacional Wikipédia</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>Site criado por <a href="https://github.com/devzone1001" target="_blank" >devzone1001</a> para o <a href="https://www.dio.me/" target="_blank" >DesafioDIOHTML</a></footer>
+    </div>
+</body>
+</html>
